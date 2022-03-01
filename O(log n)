@@ -1,0 +1,28 @@
+#include<iostream>
+#include<algorithm>
+#include<array>
+
+const size_t arraySize = 10;
+
+void printArray(std::array<int, arraySize> &angka){
+    std::cout << "Array: ";
+    for(int &a : angka){
+        std::cout << a << " ";
+    }
+    std::cout << std::endl;
+}
+
+int main(){
+    std::array<int, arraySize> angka = {3,4,5,1,2,6,8,7,9,0};
+
+    int angkaCari = 5;
+    bool ketemu;
+
+    std::sort(angka.begin(), angka.end());
+    ketemu = std::binary_search(angka.begin(), angka.end(), angkaCari);
+    printArray(angka);
+
+    std::cout << ketemu << std::endl;
+    std::cin.get();
+    return 0;
+}
