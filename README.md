@@ -3,7 +3,8 @@
 #include <iostream>
 using namespace std;
 
-#O(1)
+# O(1)
+     
 int main(){
      cout << "testing" << endl;
      return 0;
