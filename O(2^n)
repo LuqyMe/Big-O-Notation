@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+
+//eksponen
+int main()
+{
+    int bilangan;
+    cout << " Masukkan Sebuah Bilangan : ";
+    cin >> bilangan;
+    cout << "\n Nilai Eksponennya : " << exp(bilangan);
+}
